@@ -1,16 +1,17 @@
 console.log('grabbing template.js!');
-require(['underscore', 'jquery'], function() {
+define(['underscore', 'jquery'], function() {
 	//some code
 	const showName = function(n){
 		let temp = _.template("Hello <%= name %>");
 		$("body").html(temp({name: n}));
-	}
+	};
 	return{
 		showName: showName
-	}
+	};
 });
 
-require(['lib/modules/template'], function(template){
+require(['libs/modules/template'], function(template){
+	console.log('attempting to show name');
 	template.showName("Joel");
 })
 
