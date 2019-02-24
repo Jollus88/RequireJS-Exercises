@@ -22,4 +22,4 @@ $RECYCLE.BIN/
 # Operating System Files
 # =========================
 
-/project/node_modules
+/node_modules

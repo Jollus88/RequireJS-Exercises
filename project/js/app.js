@@ -21,14 +21,14 @@ require.config({
 	}
 });
 
-// define(function(require){
-// 	const myteam = require("./libs/modules/team");
-// 	const mylogger = require("./libs/modules/player");
-// 	alert("Player name : " + myteam.player);
-// 	mylogger.myfunc();
-// })
+define(function(require){
+	const myteam = require("./libs/modules/team");
+	const mylogger = require("./libs/modules/player");
+	alert("Player name : " + myteam.player);
+	mylogger.myfunc();
+})
 
-define(['libs/modules/user', 'blog/post'], function(u, p){
-	var user = new u(), post = new p();
-	post.makePost();
-});
+// define(['libs/modules/user', 'blog/post'], function(u, p){
+// 	var user = new u(), post = new p();
+// 	post.makePost();
+// });
