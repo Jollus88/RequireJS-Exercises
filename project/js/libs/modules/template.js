@@ -11,7 +11,7 @@ define(['underscore', 'jquery'], function() {
 });
 
 require(['libs/modules/template'], function(template){
-	console.log('attempting to show name');
+	console.log('attempting to show name')
 	template.showName("Joel");
 })
 
